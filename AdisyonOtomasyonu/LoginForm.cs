@@ -52,10 +52,11 @@ namespace AdisyonOtomasyonu
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Hide();
             MainForm form = new MainForm();
             form.ShowDialog();
-            LoginForm form2 = new LoginForm();
-            form2.Hide();
+            form = null;
+            this.Show();
         }
     }
 }
