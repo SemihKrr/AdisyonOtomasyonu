@@ -32,19 +32,13 @@ namespace AdisyonOtomasyonu
 
         private void btnTables_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedIndex = 0;
+            tabControl1.SelectedIndex = 1;
         }
 
         private void btnProducts_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedIndex = 1;
-        }
-
-        private void btnUsers_Click(object sender, EventArgs e)
-        {
             tabControl1.SelectedIndex = 2;
         }
-
         private void btnKitchen_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 3;
@@ -63,6 +57,16 @@ namespace AdisyonOtomasyonu
         private void btnSettings_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 5;
+        }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 0;
         }
     }
 }
