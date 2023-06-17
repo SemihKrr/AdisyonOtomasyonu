@@ -61,7 +61,7 @@ namespace AdisyonOtomasyonu
 
         private void btn_Click(object sender, EventArgs e)
         {
-
+            tabControl1.SelectedIndex = 6;
         }
 
         private void button10_Click(object sender, EventArgs e)
