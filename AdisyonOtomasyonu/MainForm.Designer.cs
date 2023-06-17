@@ -60,6 +60,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductGroup = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Picture = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button21 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -81,25 +85,21 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.btnClearOrder = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.button28 = new System.Windows.Forms.Button();
             this.İtem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QTY = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductGroup = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Picture = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnClearOrder = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.button28 = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -109,8 +109,8 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage5.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.panel3.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -183,7 +183,7 @@
             this.btnKitchen.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnKitchen.Size = new System.Drawing.Size(200, 60);
             this.btnKitchen.TabIndex = 4;
-            this.btnKitchen.Text = "   Kitchen";
+            this.btnKitchen.Text = "   Waiters";
             this.btnKitchen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnKitchen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnKitchen.UseVisualStyleBackColor = true;
@@ -537,6 +537,35 @@
             this.dataGridView1.Size = new System.Drawing.Size(1015, 273);
             this.dataGridView1.TabIndex = 1;
             // 
+            // ProductName
+            // 
+            this.ProductName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ProductName.FillWeight = 150F;
+            this.ProductName.HeaderText = "Product";
+            this.ProductName.Name = "ProductName";
+            this.ProductName.ReadOnly = true;
+            // 
+            // ProductGroup
+            // 
+            this.ProductGroup.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ProductGroup.HeaderText = "Product Group";
+            this.ProductGroup.Name = "ProductGroup";
+            this.ProductGroup.ReadOnly = true;
+            // 
+            // ProductPrice
+            // 
+            this.ProductPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ProductPrice.HeaderText = "Price";
+            this.ProductPrice.Name = "ProductPrice";
+            this.ProductPrice.ReadOnly = true;
+            // 
+            // Picture
+            // 
+            this.Picture.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Picture.HeaderText = "Picture";
+            this.Picture.Name = "Picture";
+            this.Picture.ReadOnly = true;
+            // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -766,136 +795,6 @@
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // panel3
-            // 
-            this.panel3.AutoScroll = true;
-            this.panel3.Controls.Add(this.button27);
-            this.panel3.Controls.Add(this.button26);
-            this.panel3.Controls.Add(this.button25);
-            this.panel3.Controls.Add(this.button24);
-            this.panel3.Controls.Add(this.button23);
-            this.panel3.Controls.Add(this.button22);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(3, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(698, 499);
-            this.panel3.TabIndex = 0;
-            // 
-            // button22
-            // 
-            this.button22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button22.FlatAppearance.BorderSize = 0;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button22.Image = ((System.Drawing.Image)(resources.GetObject("button22.Image")));
-            this.button22.Location = new System.Drawing.Point(3, 3);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(224, 129);
-            this.button22.TabIndex = 0;
-            this.button22.Text = "    Hamburger                                                    25TL";
-            this.button22.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button22.UseVisualStyleBackColor = true;
-            // 
-            // button23
-            // 
-            this.button23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button23.FlatAppearance.BorderSize = 0;
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button23.Image = ((System.Drawing.Image)(resources.GetObject("button23.Image")));
-            this.button23.Location = new System.Drawing.Point(233, 3);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(224, 129);
-            this.button23.TabIndex = 1;
-            this.button23.Text = "    Pizza                                                                     25T" +
-    "L";
-            this.button23.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button23.UseVisualStyleBackColor = true;
-            // 
-            // button24
-            // 
-            this.button24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button24.FlatAppearance.BorderSize = 0;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button24.Image = ((System.Drawing.Image)(resources.GetObject("button24.Image")));
-            this.button24.Location = new System.Drawing.Point(3, 138);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(224, 129);
-            this.button24.TabIndex = 2;
-            this.button24.Text = "    Hamburger                                                    25TL";
-            this.button24.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button24.UseVisualStyleBackColor = true;
-            // 
-            // button25
-            // 
-            this.button25.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button25.FlatAppearance.BorderSize = 0;
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button25.Image = ((System.Drawing.Image)(resources.GetObject("button25.Image")));
-            this.button25.Location = new System.Drawing.Point(233, 138);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(224, 129);
-            this.button25.TabIndex = 3;
-            this.button25.Text = "    Hamburger                                                    25TL";
-            this.button25.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button25.UseVisualStyleBackColor = true;
-            // 
-            // button26
-            // 
-            this.button26.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button26.FlatAppearance.BorderSize = 0;
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button26.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button26.Image = ((System.Drawing.Image)(resources.GetObject("button26.Image")));
-            this.button26.Location = new System.Drawing.Point(463, 138);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(224, 129);
-            this.button26.TabIndex = 4;
-            this.button26.Text = "    Hamburger                                                    25TL";
-            this.button26.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button26.UseVisualStyleBackColor = true;
-            // 
-            // button27
-            // 
-            this.button27.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button27.FlatAppearance.BorderSize = 0;
-            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button27.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button27.Image = ((System.Drawing.Image)(resources.GetObject("button27.Image")));
-            this.button27.Location = new System.Drawing.Point(463, 3);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(224, 129);
-            this.button27.TabIndex = 5;
-            this.button27.Text = "    Hamburger                                                    25TL";
-            this.button27.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button27.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(707, 20);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 18);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Order";
-            // 
-            // btnClearOrder
-            // 
-            this.btnClearOrder.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClearOrder.FlatAppearance.BorderSize = 0;
-            this.btnClearOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearOrder.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnClearOrder.ForeColor = System.Drawing.Color.IndianRed;
-            this.btnClearOrder.Location = new System.Drawing.Point(938, 15);
-            this.btnClearOrder.Name = "btnClearOrder";
-            this.btnClearOrder.Size = new System.Drawing.Size(75, 23);
-            this.btnClearOrder.TabIndex = 2;
-            this.btnClearOrder.Text = "Clear Order";
-            this.btnClearOrder.UseVisualStyleBackColor = true;
-            // 
             // dataGridView2
             // 
             this.dataGridView2.AllowUserToAddRows = false;
@@ -926,6 +825,158 @@
             this.dataGridView2.Size = new System.Drawing.Size(306, 346);
             this.dataGridView2.TabIndex = 3;
             // 
+            // İtem
+            // 
+            this.İtem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.İtem.FillWeight = 150F;
+            this.İtem.HeaderText = "İtem";
+            this.İtem.Name = "İtem";
+            this.İtem.ReadOnly = true;
+            // 
+            // QTY
+            // 
+            this.QTY.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.QTY.HeaderText = "QTY";
+            this.QTY.Name = "QTY";
+            this.QTY.ReadOnly = true;
+            // 
+            // Price
+            // 
+            this.Price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Price.HeaderText = "Price";
+            this.Price.Name = "Price";
+            this.Price.ReadOnly = true;
+            // 
+            // btnClearOrder
+            // 
+            this.btnClearOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClearOrder.FlatAppearance.BorderSize = 0;
+            this.btnClearOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearOrder.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnClearOrder.ForeColor = System.Drawing.Color.IndianRed;
+            this.btnClearOrder.Location = new System.Drawing.Point(938, 15);
+            this.btnClearOrder.Name = "btnClearOrder";
+            this.btnClearOrder.Size = new System.Drawing.Size(75, 23);
+            this.btnClearOrder.TabIndex = 2;
+            this.btnClearOrder.Text = "Clear Order";
+            this.btnClearOrder.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(707, 20);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(48, 18);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Order";
+            // 
+            // panel3
+            // 
+            this.panel3.AutoScroll = true;
+            this.panel3.Controls.Add(this.button27);
+            this.panel3.Controls.Add(this.button26);
+            this.panel3.Controls.Add(this.button25);
+            this.panel3.Controls.Add(this.button24);
+            this.panel3.Controls.Add(this.button23);
+            this.panel3.Controls.Add(this.button22);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(698, 499);
+            this.panel3.TabIndex = 0;
+            // 
+            // button27
+            // 
+            this.button27.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button27.FlatAppearance.BorderSize = 0;
+            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button27.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button27.Image = ((System.Drawing.Image)(resources.GetObject("button27.Image")));
+            this.button27.Location = new System.Drawing.Point(463, 3);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(224, 129);
+            this.button27.TabIndex = 5;
+            this.button27.Text = "    Hamburger                                                    25TL";
+            this.button27.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button27.UseVisualStyleBackColor = true;
+            // 
+            // button26
+            // 
+            this.button26.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button26.FlatAppearance.BorderSize = 0;
+            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button26.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button26.Image = ((System.Drawing.Image)(resources.GetObject("button26.Image")));
+            this.button26.Location = new System.Drawing.Point(463, 138);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(224, 129);
+            this.button26.TabIndex = 4;
+            this.button26.Text = "    Hamburger                                                    25TL";
+            this.button26.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button26.UseVisualStyleBackColor = true;
+            // 
+            // button25
+            // 
+            this.button25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button25.FlatAppearance.BorderSize = 0;
+            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button25.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button25.Image = ((System.Drawing.Image)(resources.GetObject("button25.Image")));
+            this.button25.Location = new System.Drawing.Point(233, 138);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(224, 129);
+            this.button25.TabIndex = 3;
+            this.button25.Text = "    Hamburger                                                    25TL";
+            this.button25.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button25.UseVisualStyleBackColor = true;
+            // 
+            // button24
+            // 
+            this.button24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button24.FlatAppearance.BorderSize = 0;
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button24.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button24.Image = ((System.Drawing.Image)(resources.GetObject("button24.Image")));
+            this.button24.Location = new System.Drawing.Point(3, 138);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(224, 129);
+            this.button24.TabIndex = 2;
+            this.button24.Text = "    Hamburger                                                    25TL";
+            this.button24.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button24.UseVisualStyleBackColor = true;
+            // 
+            // button23
+            // 
+            this.button23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button23.FlatAppearance.BorderSize = 0;
+            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button23.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button23.Image = ((System.Drawing.Image)(resources.GetObject("button23.Image")));
+            this.button23.Location = new System.Drawing.Point(233, 3);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(224, 129);
+            this.button23.TabIndex = 1;
+            this.button23.Text = "    Pizza                                                                     25T" +
+    "L";
+            this.button23.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button23.UseVisualStyleBackColor = true;
+            // 
+            // button22
+            // 
+            this.button22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button22.FlatAppearance.BorderSize = 0;
+            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button22.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button22.Image = ((System.Drawing.Image)(resources.GetObject("button22.Image")));
+            this.button22.Location = new System.Drawing.Point(3, 3);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(224, 129);
+            this.button22.TabIndex = 0;
+            this.button22.Text = "    Hamburger                                                    25TL";
+            this.button22.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button22.UseVisualStyleBackColor = true;
+            // 
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.button28);
@@ -953,57 +1004,6 @@
             this.button28.UseVisualStyleBackColor = false;
             this.button28.Click += new System.EventHandler(this.button28_Click);
             // 
-            // İtem
-            // 
-            this.İtem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.İtem.FillWeight = 150F;
-            this.İtem.HeaderText = "İtem";
-            this.İtem.Name = "İtem";
-            this.İtem.ReadOnly = true;
-            // 
-            // QTY
-            // 
-            this.QTY.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.QTY.HeaderText = "QTY";
-            this.QTY.Name = "QTY";
-            this.QTY.ReadOnly = true;
-            // 
-            // Price
-            // 
-            this.Price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Price.HeaderText = "Price";
-            this.Price.Name = "Price";
-            this.Price.ReadOnly = true;
-            // 
-            // ProductName
-            // 
-            this.ProductName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ProductName.FillWeight = 150F;
-            this.ProductName.HeaderText = "Product";
-            this.ProductName.Name = "ProductName";
-            this.ProductName.ReadOnly = true;
-            // 
-            // ProductGroup
-            // 
-            this.ProductGroup.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ProductGroup.HeaderText = "Product Group";
-            this.ProductGroup.Name = "ProductGroup";
-            this.ProductGroup.ReadOnly = true;
-            // 
-            // ProductPrice
-            // 
-            this.ProductPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ProductPrice.HeaderText = "Price";
-            this.ProductPrice.Name = "ProductPrice";
-            this.ProductPrice.ReadOnly = true;
-            // 
-            // Picture
-            // 
-            this.Picture.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Picture.HeaderText = "Picture";
-            this.Picture.Name = "Picture";
-            this.Picture.ReadOnly = true;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1028,8 +1028,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             this.ResumeLayout(false);
 
