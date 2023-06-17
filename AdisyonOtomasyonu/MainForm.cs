@@ -68,6 +68,15 @@ namespace AdisyonOtomasyonu
         {
             tabControl1.SelectedIndex = 0;
         }
+
+        private void button30_Click(object sender, EventArgs e)
+        {           
+            base.OnLoad(e);
+            if (MessageBox.Show("Do you want to quit?"," " , MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            {
+                Application.Exit(); 
+            }
+        }
     }
 }
 
