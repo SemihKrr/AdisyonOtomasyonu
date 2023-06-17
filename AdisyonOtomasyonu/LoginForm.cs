@@ -55,8 +55,6 @@ namespace AdisyonOtomasyonu
             this.Hide();
             MainForm form = new MainForm();
             form.ShowDialog();
-            form = null;
-            this.Show();
         }
     }
 }

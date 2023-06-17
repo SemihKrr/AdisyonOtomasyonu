@@ -85,6 +85,10 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button29 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.İtem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QTY = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -109,6 +113,7 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage5.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel3.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -783,9 +788,7 @@
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.dataGridView2);
-            this.tabPage5.Controls.Add(this.btnClearOrder);
-            this.tabPage5.Controls.Add(this.label6);
+            this.tabPage5.Controls.Add(this.panel4);
             this.tabPage5.Controls.Add(this.panel3);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
@@ -794,6 +797,53 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.button29);
+            this.panel4.Controls.Add(this.label9);
+            this.panel4.Controls.Add(this.label8);
+            this.panel4.Controls.Add(this.dataGridView2);
+            this.panel4.Controls.Add(this.btnClearOrder);
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(701, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(317, 499);
+            this.panel4.TabIndex = 1;
+            // 
+            // button29
+            // 
+            this.button29.BackColor = System.Drawing.Color.Gray;
+            this.button29.FlatAppearance.BorderSize = 0;
+            this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button29.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button29.Location = new System.Drawing.Point(8, 442);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(298, 48);
+            this.button29.TabIndex = 12;
+            this.button29.Text = "Pay";
+            this.button29.UseVisualStyleBackColor = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(271, 401);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 18);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "$$$";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.Location = new System.Drawing.Point(5, 401);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(40, 18);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Total";
             // 
             // dataGridView2
             // 
@@ -819,11 +869,11 @@
             this.QTY,
             this.Price});
             this.dataGridView2.EnableHeadersVisualStyles = false;
-            this.dataGridView2.Location = new System.Drawing.Point(707, 48);
+            this.dataGridView2.Location = new System.Drawing.Point(5, 41);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.Size = new System.Drawing.Size(306, 346);
-            this.dataGridView2.TabIndex = 3;
+            this.dataGridView2.TabIndex = 9;
             // 
             // İtem
             // 
@@ -854,10 +904,10 @@
             this.btnClearOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClearOrder.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnClearOrder.ForeColor = System.Drawing.Color.IndianRed;
-            this.btnClearOrder.Location = new System.Drawing.Point(938, 15);
+            this.btnClearOrder.Location = new System.Drawing.Point(236, 8);
             this.btnClearOrder.Name = "btnClearOrder";
             this.btnClearOrder.Size = new System.Drawing.Size(75, 23);
-            this.btnClearOrder.TabIndex = 2;
+            this.btnClearOrder.TabIndex = 8;
             this.btnClearOrder.Text = "Clear Order";
             this.btnClearOrder.UseVisualStyleBackColor = true;
             // 
@@ -865,10 +915,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(707, 20);
+            this.label6.Location = new System.Drawing.Point(5, 13);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 18);
-            this.label6.TabIndex = 1;
+            this.label6.TabIndex = 7;
             this.label6.Text = "Order";
             // 
             // panel3
@@ -1027,7 +1077,8 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
@@ -1094,17 +1145,21 @@
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Button btnClearOrder;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.DataGridViewTextBoxColumn İtem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn QTY;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductGroup;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn Picture;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button29;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn İtem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QTY;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.Button btnClearOrder;
+        private System.Windows.Forms.Label label6;
     }
 }

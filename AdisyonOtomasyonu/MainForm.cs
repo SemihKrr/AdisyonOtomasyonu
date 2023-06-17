@@ -23,6 +23,8 @@ namespace AdisyonOtomasyonu
             MaximizeBox = false;
             MinimizeBox = false;
             ControlBox = false;
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
             tabControl1.Appearance = TabAppearance.FlatButtons;
             tabControl1.ItemSize = new Size(0, 1);
             tabControl1.SizeMode = TabSizeMode.Fixed;
